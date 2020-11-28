@@ -1,0 +1,57 @@
+:root {
+    --splash-clip: 0%;
+    --splash-opacity: 0;
+}
+body.ready {
+    --splash-clip: 100%;
+    --splash-opacity: .5;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #7acddf;
+}
+
+section {
+    height: 100vh;
+}
+
+.splash {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.splash:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../static/boat.jpg") no-repeat center;
+    background-size: cover;
+    opacity: var(--splash-opacity);
+    transition: opacity 1s linear;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    font-family: 'La Belle Aurore', cursive;
+    padding: 0 .4em;
+    color: #fff;
+    margin: 0;
+    font-size: 15vw;
+    font-weight: normal;
+    text-shadow: .08em .05em .08em rgba(0, 0, 0, .5);
+
+    transition: clip-path 1s ease .5s;
+    clip-path: polygon(0 0, var(--splash-clip) 0%, var(--splash-clip) 100%, 0% 100%);
+}
+
