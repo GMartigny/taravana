@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Agence martiniquaise de sortie en mer, sortie dauphin ...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taravana</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/tablet.css" media="(max-width: 768px)">
 </head>
 <body>
-    <main>
+    <main itemscope itemtype="https://schema.org/Organization">
         <section class="splash">
             <div class="center">
-                <h1>Taravana</h1>
+                <h1 itemprop="name">Taravana</h1>
             </div>
+        </section>
+
+        <section>
+            <h2>Découverte de l'océan</h2>
+            <p>
+                Blah blah blah
+            </p>
+        </section>
+
+        <div class="window" data-img="static/child.webp"></div>
+
+        <section>
+            <h2>Tarifs</h2>
+            <p>
+                Pas cher, pas cher
+            </p>
+            <p>
+                Blah blah blah
+            </p>
+        </section>
+
+        <div class="window" data-img="static/sunset.webp"></div>
+
+        <section>
+            <h2>Contacts</h2>
+            <p>
+                Téléphone: 06 60 60 60 60
+            </p>
+            <p>
+                Mail: taranava@gmail.com
+            </p>
+            <p>
+                Adresse: à la plage
+            </p>
         </section>
     </main>
     <script src="src/main.js"></script>

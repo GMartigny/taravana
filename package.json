@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "min": "imagemin static/*.jpg --plugin webp --out-dir=static"
+    }
+}
