@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
 
     const viewHeight = window.innerHeight;
     let scroll = window.scrollY;
+    document.body.classList.toggle("scrolled", scroll > 50);
 
     const setBgPosition = (el, top, height) => {
         const position = ((viewHeight + scroll) - top) / (viewHeight + height);
@@ -27,6 +28,9 @@ window.addEventListener("load", () => {
 
     window.addEventListener("scroll", () => {
         scroll = window.scrollY;
+
+        document.body.classList.toggle("scrolled", scroll > 50);
+
         windows.forEach(({ el, top, height }) => {
             setBgPosition(el, top, height);
         });
