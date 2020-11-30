@@ -1,9 +1,9 @@
 {
     "scripts": {
         "dev": "nodemon -x npm run build -e js,less,jpg --watch src",
-        "images": "imagemin src/**/*.jpg --plugin webp --out-dir=dist",
-        "less": "lessc src/main.less dist/main.css --clean-css",
-        "js": "minify src/main.js -d dist",
+        "images": "imagemin src/**/*.jpg --plugin webp --out-dir=public/dist",
+        "less": "lessc src/main.less public/dist/main.css --clean-css",
+        "js": "minify src/main.js -d public/dist",
         "build": "npm run images && npm run less && npm run js"
     },
     "dependencies": {
