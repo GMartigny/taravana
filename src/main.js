@@ -1,3 +1,5 @@
+import images from "./static/*.jpg";
+
 window.addEventListener("load", () => {
     requestAnimationFrame(() => {
         document.body.classList.add("ready");
@@ -15,7 +17,7 @@ window.addEventListener("load", () => {
     }
 
     const windows = [...document.querySelectorAll(".window")].map((el) => {
-        el.style.backgroundImage = `url(${el.dataset.img})`;
+        el.style.backgroundImage = `url(${images[el.dataset.img]})`;
         const top = el.offsetTop;
         const { height } = el.getBoundingClientRect();
         setBgPosition(el, top, height);
