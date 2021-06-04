@@ -1,14 +1,26 @@
 {
     "version": "0.2.0",
-    "main": "src/index.html",
+    "browser": "dist/index.html",
     "scripts": {
         "play": "parcel src/index.html",
         "build": "parcel build src/index.html",
         "postversion": "vercel --prod"
     },
     "devDependencies": {
+        "@parcel/transformer-less": "^2.0.0-beta.2",
+        "babel-plugin-transform-glob-import": "^1.0.1",
         "less": "^4.1.1",
-        "parcel-bundler": "^1.12.5",
+        "parcel": "^2.0.0-beta.2",
         "parcel-plugin-imagemin": "^4.0.2"
+    },
+    "targets": {
+        "browser": {
+            "publicUrl": "./"
+        }
+    },
+    "babel": {
+        "plugins": [
+            "babel-plugin-transform-glob-import"
+        ]
     }
 }
