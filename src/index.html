@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <title>Taravana</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Agence martiniquaise de sortie en mer, sortie dauphin ...">
+    <meta name="keywords" content="skipper, ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taravana</title>
+
+    <meta property="og:title" content="Taravana Tautaï"/>
+    <meta property="og:description" content="Get to know me better and have a look at what I can do."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//www.tarvana.fr/"/>
+    <meta property="og:image" content="//www.tarvana.fr/logo.png"/>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.less">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/LocalBusiness">
     <header>
         <h1 itemprop="name">Taravana</h1>
         <div id="phone">06 60 60 60 60</div>
     </header>
-    <main itemscope itemtype="https://schema.org/Organization">
+    <main>
         <section class="splash"></section>
 
-        <section>
-            <h3>La mer autrement</h3>
-            <p>
-                Après une première vie bien remplie passée au large de l’île afin de nous ramener les meilleurs produits de la mer, nous l'avons trouvé avec tout son potentiel.<br>
-                Après plusieurs mois de chantier, il ressort métamorphosé !
-            </p>
-            <p>
-                Aménagé d’un plan de pont unique en Martinique, il est devenu extrêmement confortable tout en gardant la sécurité et la robustesse d'un bateau de pêche professionnel.<br>
-                L’installation de sièges type <q>jockey</q> donnera aux passagers un maintien dans une position optimale, même en cas de mer agitée.
-            </p>
+        <section itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+            <h2 itemprop="name">Sorties</h2>
+            <div class="grid">
+                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <h3 itemprop="name">Journée</h3>
+                    <p itemprop="description">
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                    </p>
+                    <aside>
+                        <span itemprop="price">450</span><span itemprop="priceCurrency">€</span>
+                    </aside>
+                </div>
+                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <h3 itemprop="name">Demi-journée</h3>
+                    <p itemprop="description">
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                    </p>
+                    <aside>
+                        <span itemprop="price">300</span><span itemprop="priceCurrency">€</span>
+                    </aside>
+                </div>
+                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <h3 itemprop="name">Eco-tour</h3>
+                    <p itemprop="description">
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                    </p>
+                    <aside>
+                        <span itemprop="price">65</span><span itemprop="priceCurrency">€</span>
+                    </aside>
+                </div>
+                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <h3 itemprop="name">Pêche</h3>
+                    <p itemprop="description">
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                    </p>
+                    <aside>
+                        <span itemprop="price">120</span><span itemprop="priceCurrency">€</span>
+                    </aside>
+                </div>
+                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                    <h3 itemprop="name">Privatisation</h3>
+                    <p itemprop="description">
+                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                    </p>
+                    <aside>
+                        <span itemprop="price">600</span><span itemprop="priceCurrency">€</span>
+                    </aside>
+                </div>
+            </div>
         </section>
 
         <div class="window" data-img="child2"></div>
 
         <section>
-            <h3>Détente</h3>
-            <p>
+            <h2>Détente</h2>
+            <p class="paper">
                 Un grand bain de soleil situé sur l'arrière, permettra de profiter d'un espace détente de type <q>lounge</q>.<br>
                 <em>Taravana</em> est bien sûr également aménagé pour savourer un apéritif avec son bar déployable au mouillage et son taud intégral protégeant du soleil lors des moments d'observations des mammifères marins.
             </p>
-            <p>
+            <p class="paper">
                 Ainsi paré, il est prêt à faire découvrir toutes les richesses de la côte caraïbe martiniquaise vue du large, au son des histoires de la Martinique contée par un capitaine passionné et expérimenté.
             </p>
         </section>
@@ -45,8 +97,8 @@
         <div class="window" data-img="drink"></div>
 
         <section>
-            <h3>En journée complète ou demi journée</h3>
-            <ul>
+            <h2>En journée complète ou demi journée</h2>
+            <ul class="paper">
                 <li>Sortie à la découverte des dauphins, baleines et autres mammifères marins au sein du sanctuaire Agoa.</li>
                 <li>Une halte à la grotte de chauve-souris permettra d'admirer ses eaux turquoises translucides.</li>
                 <li>Sur le retour, <em>Taravana</em> vous offrira un instant baignade à l'Anse noire.</li>
@@ -57,8 +109,8 @@
         <div class="window" data-img="child"></div>
 
         <section>
-            <h3>En soirée</h3>
-            <p>
+            <h2>En soirée</h2>
+            <p class="paper">
                 Une sortie <q>sunset</q> sera organisée pour admirer les reflets argentés sur l'eau et profiter des derniers rayons de soleil en savourant un apéritif à base de produits locaux en circuit court.
             </p>
         </section>
@@ -66,8 +118,8 @@
         <div class="window" data-img="sunset"></div>
 
         <section>
-            <h3>Pêche</h3>
-            <p>
+            <h2>Pêche</h2>
+            <p class="paper">
                 <em>Taravana</em> pourra également offrir aux adeptes une partie de pêche sportive éco-responsable en pleine mer caraïbe avec du matériel digne des professionnels sur 6 porte-cannes intégrés au bateau.
             </p>
         </section>
@@ -75,27 +127,15 @@
         <div class="window" data-img="fishing"></div>
 
         <section>
-            <h3>Tarifs</h3>
-            <p>
-                Pas cher, pas cher
-            </p>
-            <p>
-                Blah blah blah
-            </p>
-        </section>
-
-        <div class="window" data-img="view"></div>
-
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-                <li>
+            <h2>Contacts</h2>
+            <ul class="paper">
+                <li itemprop="telephone">
                     <a href="tel:+33660606060">06 60 60 60 60</a>
                 </li>
-                <li>
+                <li itemprop="email">
                     <a href="mailto:taranava@gmail.com">taranava@gmail.com</a>
                 </li>
-                <li>
+                <li itemprop="address">
                     <a href="https://goo.gl/maps/bNVKmX76JaJ7gEoh6">
                         Ponton de la plage<br>
                         97217 les Anses-d'Arlet

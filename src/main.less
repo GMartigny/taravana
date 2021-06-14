@@ -1,4 +1,5 @@
-@white: #fff;
+@black: #111;
+@white: #fafafa;
 @blue: #047b86;
 @complementary: #de7e3a;
 @font: "Great Vibes", cursive;
@@ -8,6 +9,20 @@
     box-shadow: 0 @lvl*0.46px @lvl*0.625px -@lvl*0.29px fade(@color, 20%),
         0 @lvl*1px @lvl*1.6px @lvl*0.125px fade(@color, 14%),
         0 @lvl*0.4px @lvl*1.9px @lvl/3px fade(@color, 12%);
+}
+
+.reduce-motion (@rule) {
+    @media (prefers-reduced-motion) {
+        @rule();
+    }
+}
+
+.paper (@lvl) {
+    background-color: @white;
+    .elevation(@lvl);
+    border-radius: 4px;
+    padding: 2em 1em;
+    max-width: 80ch;
 }
 
 .fullBefore (@color) {
@@ -31,25 +46,25 @@
     --splash-opacity: 0;
 }
 
-body.ready {
-    --splash-clip: 100%;
-    --splash-opacity: .5;
+body {
+    font-family: sans-serif;
+
+    &.ready {
+        --splash-clip: 100%;
+        --splash-opacity: .5;
+    }
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 section {
     background-color: @blue;
     position: relative;
     padding: 20px;
-
-    &:nth-child(even) {
-        .elevation(4);
-    }
+    box-shadow: 0 0 8px fade(#000, 60%);
 }
 
 header {
@@ -65,19 +80,32 @@ header {
     padding: 8px 2vw;
     color: @white;
 
+    .reduce-motion({
+        transition: none;
+    });
+
+    #logo, h1 {
+        vertical-align: middle;
+    }
+
     h1 {
+        --scale: 7;
+        position: relative;
         padding: 0 .2em;
         font-size: 2.8vw;
         transition: clip-path 1s ease .5s, transform .5s ease;
-        clip-path: polygon(0 0, var(--splash-clip) 0%, var(--splash-clip) 100%, 0% 100%);
+        clip-path: polygon(0 0, var(--splash-clip) 0%, var(--splash-clip) 200%, 0% 200%);
         z-index: 1;
-        transform: translate3d(calc(48vw - 50%), 50vh, 0) scale3d(7, 7, 1);
-        transform-origin: center;
+        transform: translate3d(calc(50vw - .2em - 80px - 2vw - 50%), 50vh, 0) scale3d(var(--scale), var(--scale), 1);
 
         @media (max-width: 768px) {
             font-size: 7vw;
-            transform: translate3d(calc(48vw - 50%), 50vh, 0) scale3d(3, 3, 1);
+            --scale: 3;
         }
+
+        .reduce-motion({
+            transition: none;
+        });
     }
 
     #phone {
@@ -85,7 +113,7 @@ header {
     }
 }
 
-.scrolled {
+body.scrolled {
     header {
         transform: none;
         .elevation(6);
@@ -93,6 +121,19 @@ header {
         h1 {
             transform: none;
         }
+    }
+
+    .splash:after {
+        opacity: 0;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: rotate(45deg) translate(0);
+    }
+    to {
+        transform: rotate(45deg) translate(-1em, -1em);
     }
 }
 
@@ -111,12 +152,69 @@ header {
         opacity: var(--splash-opacity);
         transition: opacity 1s linear;
     }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 4em;
+        width: 2em;
+        height: 2em;
+        border: solid #fff;
+        border-width: 0 4px 4px 0;
+        border-radius: 4px;
+        transition: opacity .2s linear;
+        animation: jump alternate infinite .5s;
+
+        .reduce-motion({
+            animation: none;
+            transform: rotate(45deg);
+        });
+    }
 }
 
 .window {
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position-x: center;
+    background-position: 50%;
+
+    .reduce-motion({
+        background-position-y: 50% !important
+    });
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .tile {
+        flex: 0 0 calc((100% / 3) - 2em);
+        margin: 0 1em 1em;
+        .paper(2);
+
+        h3 {
+            color: @black;
+            padding-top: 0;
+        }
+
+        aside {
+            float: right;
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+
+        .tile {
+            width: calc(100% - 2em);
+        }
+    }
 }
 
 h1, h2, h3 {
@@ -137,17 +235,17 @@ h1 {
     font-size: 15vw;
 }
 
-h3 {
+h2 {
     font-size: 40px;
 }
+h3 {
+    font-size: 30px;
+}
 
-p, ul {
-    padding: 2em 1em;
-    max-width: 80ch;
-    margin: 10px auto;
-    background-color: #fafafa;
-    .elevation(2);
-    border-radius: 4px;
+
+.paper {
+    margin: 0 auto 10px;
+    .paper(2);
 }
 
 ul {
@@ -163,10 +261,11 @@ a {
     color: @blue;
     padding: .25em;
 
-    .fullBefore(fade(@complementary, 50%));
+    .fullBefore(fade(@complementary, 100%));
 
     &:before {
-        transform: scaleY(0);
+        transform: scaleX(0);
+        transform-origin: 0 0;
         transition: transform ease .2s;
     }
 
