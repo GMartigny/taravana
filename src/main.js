@@ -1,3 +1,4 @@
+import "./robots.txt";
 import images from "./static/*.jpg";
 
 window.addEventListener("load", () => {
