@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Taravana</title>
+    <title>Taravana Tautaï</title>
 
     <meta charset="UTF-8">
     <meta name="description" content="Agence martiniquaise de sortie en mer, sortie dauphin ...">
-    <meta name="keywords" content="skipper, ">
+    <meta name="keywords" content="skipper, bateau">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:title" content="Taravana Tautaï"/>
@@ -13,6 +13,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="//www.tarvana.fr/"/>
     <meta property="og:image" content="//www.tarvana.fr/logo.png"/>
+    <meta property="twitter:card" content="summary_large_image">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -21,18 +22,20 @@
 <body itemscope itemtype="https://schema.org/LocalBusiness">
     <header>
         <div>
-            <img src="./static/logo.png" alt="logo" itemprop="logo" id="logo">
+            <img src="./static/logo.png" alt="logo" itemprop="logo" id="logo" width="80" height="50">
             <h1 itemprop="name">Taravana</h1>
         </div>
         <div id="phone">06 60 60 60 60</div>
     </header>
     <main>
-        <section class="splash"></section>
+        <section class="splash">
+            <img src="./static/boat.jpg" alt="Photo du bateau" itemprop="image">
+        </section>
 
         <section itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
             <h2 itemprop="name">Sorties</h2>
             <div class="grid">
-                <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <div class="tile dolphin" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                     <h3 itemprop="name">Journée</h3>
                     <p itemprop="description">
                         Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
@@ -88,7 +91,7 @@
 
         <section>
             <h2>Détente</h2>
-            <p class="paper">
+            <p class="paper palm">
                 Un grand bain de soleil situé sur l'arrière, permettra de profiter d'un espace détente de type <q>lounge</q>.<br>
                 <em>Taravana</em> est bien sûr également aménagé pour savourer un apéritif avec son bar déployable au mouillage et son taud intégral protégeant du soleil lors des moments d'observations des mammifères marins.
             </p>
@@ -101,7 +104,7 @@
 
         <section>
             <h2>En journée complète ou demi journée</h2>
-            <ul class="paper">
+            <ul class="paper dolphin">
                 <li>Sortie à la découverte des dauphins, baleines et autres mammifères marins au sein du sanctuaire Agoa.</li>
                 <li>Une halte à la grotte de chauve-souris permettra d'admirer ses eaux turquoises translucides.</li>
                 <li>Sur le retour, <em>Taravana</em> vous offrira un instant baignade à l'Anse noire.</li>
@@ -122,7 +125,7 @@
 
         <section>
             <h2>Pêche</h2>
-            <p class="paper">
+            <p class="paper rod">
                 <em>Taravana</em> pourra également offrir aux adeptes une partie de pêche sportive éco-responsable en pleine mer caraïbe avec du matériel digne des professionnels sur 6 porte-cannes intégrés au bateau.
             </p>
         </section>
@@ -145,6 +148,8 @@
                     </a>
                 </li>
             </ul>
+            <div itemprop="url" class="meta">www.taravana.fr</div>
+            <div itemprop="priceRange" class="meta">€€</div>
         </section>
     </main>
     <script src="./main.js"></script>
