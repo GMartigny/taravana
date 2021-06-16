@@ -20,69 +20,100 @@
     <link rel="stylesheet" href="./main.less">
 </head>
 <body itemscope itemtype="https://schema.org/LocalBusiness">
-    <header>
+    <header id="menu">
         <div>
             <img src="./static/logo.png" alt="logo" itemprop="logo" id="logo" width="80" height="50">
             <h1 itemprop="name">Taravana</h1>
         </div>
-        <div id="phone">06 60 60 60 60</div>
+        <nav>
+            <input type="checkbox" id="menuSwitch">
+            <label for="menuSwitch">
+                <span></span><span></span><span></span>
+            </label>
+            <ul id="nav"></ul>
+        </nav>
     </header>
     <main>
         <section class="splash">
-            <img src="./static/boat.jpg" alt="Photo du bateau" itemprop="image">
+                <img src="./static/boat.jpg" alt="Photo du bateau" itemprop="image">
         </section>
 
         <section itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
             <h2 itemprop="name">Sorties</h2>
             <div class="grid">
                 <div class="tile dolphin" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-                    <h3 itemprop="name">Journée</h3>
-                    <p itemprop="description">
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                    </p>
-                    <aside>
-                        <span itemprop="price">450</span><span itemprop="priceCurrency">€</span>
-                    </aside>
+                    <header>
+                        <img src="static/cave.jpg" alt="">
+                        <h3 itemprop="name">Journée</h3>
+                    </header>
+                    <div class="body">
+                        <p itemprop="description">
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        </p>
+                        <aside>
+                            <span itemprop="price">450</span><span itemprop="priceCurrency">€</span>
+                        </aside>
+                    </div>
                 </div>
                 <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-                    <h3 itemprop="name">Demi-journée</h3>
-                    <p itemprop="description">
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                    </p>
-                    <aside>
-                        <span itemprop="price">300</span><span itemprop="priceCurrency">€</span>
-                    </aside>
+                    <header>
+                        <img src="static/drink.jpg" alt="">
+                        <h3 itemprop="name">Demi-journée</h3>
+                    </header>
+                    <div class="body">
+                        <p itemprop="description">
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        </p>
+                        <aside>
+                            <span itemprop="price">300</span><span itemprop="priceCurrency">€</span>
+                        </aside>
+                    </div>
                 </div>
                 <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-                    <h3 itemprop="name">Eco-tour</h3>
-                    <p itemprop="description">
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                    </p>
-                    <aside>
-                        <span itemprop="price">65</span><span itemprop="priceCurrency">€</span>
-                    </aside>
+                    <header>
+                        <img src="static/view.jpg" alt="">
+                        <h3 itemprop="name">Eco-tour</h3>
+                    </header>
+                    <div class="body">
+                        <p itemprop="description">
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        </p>
+                        <aside>
+                            <span itemprop="price">65</span><span itemprop="priceCurrency">€</span>
+                        </aside>
+                    </div>
                 </div>
                 <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-                    <h3 itemprop="name">Pêche</h3>
-                    <p itemprop="description">
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                    </p>
-                    <aside>
-                        <span itemprop="price">120</span><span itemprop="priceCurrency">€</span>
-                    </aside>
+                    <header>
+                        <img src="static/fishing2.jpg" alt="">
+                        <h3 itemprop="name">Pêche</h3>
+                    </header>
+                    <div class="body">
+                        <p itemprop="description">
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        </p>
+                        <aside>
+                            <span itemprop="price">120</span><span itemprop="priceCurrency">€</span>
+                        </aside>
+                    </div>
                 </div>
                 <div class="tile" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-                    <h3 itemprop="name">Privatisation</h3>
-                    <p itemprop="description">
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                    </p>
-                    <aside>
-                        <span itemprop="price">600</span><span itemprop="priceCurrency">€</span>
-                    </aside>
+                    <header>
+                        <img src="static/front.jpg" alt="">
+                        <h3 itemprop="name">Privatisation</h3>
+                    </header>
+                    <div class="body">
+                        <p itemprop="description">
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        </p>
+                        <aside>
+                            <span itemprop="price">600</span><span itemprop="priceCurrency">€</span>
+                        </aside>
+                    </div>
                 </div>
             </div>
         </section>
@@ -103,7 +134,7 @@
         <div class="window" data-img="drink"></div>
 
         <section>
-            <h2>En journée complète ou demi journée</h2>
+            <h2>En journée</h2>
             <ul class="paper dolphin">
                 <li>Sortie à la découverte des dauphins, baleines et autres mammifères marins au sein du sanctuaire Agoa.</li>
                 <li>Une halte à la grotte de chauve-souris permettra d'admirer ses eaux turquoises translucides.</li>
