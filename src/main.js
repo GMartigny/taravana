@@ -1,5 +1,6 @@
 import "./robots.txt";
 import images from "./static/*.jpg";
+import "./modal.js";
 
 window.addEventListener("load", () => {
     requestAnimationFrame(() => {

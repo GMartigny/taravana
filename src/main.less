@@ -8,6 +8,7 @@
 @import "nav";
 @import "splash";
 @import "grid";
+@import "modal";
 
 .elevation (@lvl) {
     @color: #000;
@@ -96,7 +97,8 @@ section {
     });
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
+    position: relative;
     color: @white;
     font-family: @font;
     padding: .5em;
@@ -109,12 +111,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    position: relative;
     display: inline-block;
 }
 
 h2 {
     font-size: 40px;
+}
+
+h4 {
+    font-size: 33px;
 }
 
 .paper {
