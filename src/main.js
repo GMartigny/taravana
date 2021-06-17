@@ -7,14 +7,8 @@ window.addEventListener("load", () => {
     });
 
     const nav = document.getElementById("nav");
+    const switcher = document.getElementById("menuSwitch");
     const sections = document.body.querySelectorAll("h2");
-
-    const li = document.createElement("li");
-    const link = document.createElement("a");
-    link.href = "#";
-    link.innerText = "Haut";
-    li.appendChild(link);
-    nav.appendChild(li);
 
     sections.forEach((title) => {
         const anchor = document.createElement("span");
@@ -27,6 +21,7 @@ window.addEventListener("load", () => {
         const link = document.createElement("a");
         link.href = `#${id}`;
         link.innerText = title.innerText;
+        link.addEventListener("click", () => switcher.checked = false);
         li.appendChild(link);
         nav.appendChild(li);
     });
