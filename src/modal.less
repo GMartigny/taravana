@@ -17,7 +17,7 @@ dialog.modal {
     }
 
     .close {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         background-color: @complementary;
@@ -28,6 +28,11 @@ dialog.modal {
         border-radius: 0 4px 0 0;
     }
 
+    .body {
+        max-height: 80vh;
+        overflow: auto;
+    }
+
     h4 {
         color: @black;
         padding-top: 0;
@@ -35,14 +40,18 @@ dialog.modal {
     }
 }
 
-body.modal-open:after {
-    content: "";
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    opacity: 0.6;
-    z-index: 99;
+body.modal-open {
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: 99;
+    }
 }

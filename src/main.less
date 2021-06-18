@@ -122,6 +122,14 @@ h4 {
     font-size: 33px;
 }
 
+p {
+    text-align: justify;
+
+    & ~ p {
+        margin-top: 1em;
+    }
+}
+
 .paper {
     margin: 0 auto 10px;
     padding: 2em 1em;
@@ -134,6 +142,13 @@ ul {
 
     li {
         padding: .5em 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -144,6 +159,15 @@ a {
     position: relative;
     z-index: 1;
     transition: color ease .2s;
+
+    svg {
+        float: left;
+        margin-right: .75em;
+    }
+
+    span {
+        vertical-align: sub;
+    }
 
     &:before {
         content: "";
@@ -173,6 +197,21 @@ a {
         &:before {
             transform: none;
         }
+    }
+}
+
+svg {
+    position: relative;
+    height: 1.5em;
+    fill: currentColor;
+}
+
+.socials {
+    text-align: center;
+
+    svg {
+        height: 4em;
+        margin: 0 1em;
     }
 }
 
