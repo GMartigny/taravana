@@ -1,0 +1,62 @@
+{
+    "fr": {
+        "hook": {
+            "title": "L'émotion en caraïbes",
+            "content": "La Martinique est un carrefour de cultures.<br><em>Taravana Tautaï</em> est avant tout l'histoire d'une rencontre avec notre île.<br> Plusieurs programmes s’offrent à vous !<br> En journée complète ou demi-journée, vous pourrez partir à la découverte des dauphins, baleines et autres mammifères marins au sein du sanctuaire Agoa. Vous aurez peut-être la visite des tortues le temps d’une baignade à l’Anse noire, le tout, bien sûr, en dégustant l’un des meilleurs rhum de la Martinique accompagné de bons produits locaux. Selon vos envies, vous pourrez également choisir de finir cette sortie par un apéritif en profitant des derniers rayon du soleil."
+        },
+        "tours": {
+            "dolphin": {
+                "title": "Sorties dauphins",
+                "day": {
+                    "title": "Journée",
+                    "content": "Sortie observation des mamiphères marins avec repas et temps de détente compris.",
+                    "popup": {
+                        "title": "Journée dauphins",
+                        "content": "<em>Taravana tautai</em> vous emmène observer les cétacés dans leur milieu naturel pour des rencontres à couper le souffle."
+                    }
+                },
+                "half": {
+                    "title": "Demi-journée",
+                    "content": "Embarquez pour une demi journée d’observation des mammifères marins au sein du sanctuaire Agoa avec un équipage qualifié et respectueux des animaux."
+                },
+                "sunset": {
+                    "title": "Sunset",
+                    "content": "Profitez d’une après-midi en compagnie des mammifères marins présents dans le sanctuaire et finissez la journée en beauté en dégustant à bord un apéritif de qualité avec vue innoubliable sur le couché de soleil."
+                }
+            },
+            "others": {
+                "title": "Autres sorties",
+                "fishing": {
+                    "title": "Pêche sportive",
+                    "content": "Accompagné d'un équipage professionnel, nous vous proposons des formules demi-journée avec ou sans materiel pour une capacité de 6 personnes maximum."
+                },
+                "private": {
+                    "title": "Privatisation",
+                    "content": "Nous vous proposons la privatisation complète du bateau à la journée ou demi-journée pour une capacité de 12 personnes maximum. Vous aurez la possibilité de faire votre programme à la carte, tant au niveau des destinations ou escales que des repas proposés. N'hésitez pas à nous contacter pour discuter de vos envies ou désirs."
+                }
+            }
+        },
+        "boat": {
+            "title": "Le bateau",
+            "story": {
+                "title": "Histoire"
+            },
+            "plus": {
+                "title": "Aménagements"
+            }
+        },
+        "team": {
+            "title": "L'équipage",
+            "content": "Tout a commencé pour Jérôme, le capitaine, par le milieu de la plongée en tant que Brevet d'etat de plongée en 1998 aux Glénans.<br>Après une arrivée en caraïbes en 2001, il as continué sa passion de la plongée. Puis il s'est orienté vers la marine marchande avec l'obtention de son diplôme de capitaine en 2007. Après plusieurs années de capitaine de bateau à voile dans tout l'arc antillais et plusieurs transatlantique, Jérôme a décidé de déposer définitivement ses valises en martinique. Et ainsi partager sa passion du milieu sous-marin et de la navigation avec vous.<br>Ainsi est née le concept de <em>Taravana Tautaï</em>, le partage de la culture caribéennes et du patrimoine marin."
+        },
+        "contacts": {
+            "title": "Contacts"
+        },
+        "pictures": {
+            "title": "Photos"
+        },
+        "partners": {
+            "title": "Partenaires"
+        }
+    }
+}

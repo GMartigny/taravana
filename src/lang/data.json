@@ -1,0 +1,113 @@
+{
+    "title": "Taravana Tautaï",
+    "phone": "06 96 766 866",
+    "sections": [
+        {
+            "title": "hook.title",
+            "content": "hook.content"
+        },
+        "child2",
+        {
+            "title": "tours.dolphin.title",
+            "offer": true,
+            "content": [
+                {
+                    "title": "tours.dolphin.day.title",
+                    "content": "tours.dolphin.day.content",
+                    "aside": "90",
+                    "image": "cave",
+                    "open": {
+                        "title": "tours.dolphin.day.popup.title",
+                        "content": "tours.dolphin.day.popup.content"
+                    }
+                },
+                {
+                    "title": "tours.dolphin.half.title",
+                    "content": "tours.dolphin.half.content",
+                    "aside": "55",
+                    "image": "drink"
+                },
+                {
+                    "title": "tours.dolphin.sunset.title",
+                    "content": "tours.dolphin.sunset.content",
+                    "aside": "65",
+                    "image": "fishing"
+                }
+            ]
+        },
+        {
+            "title": "tours.others.title",
+            "offer": true,
+            "content": [
+                {
+                    "title": "tours.others.fishing.title",
+                    "content": "tours.others.fishing.content",
+                    "aside": "120",
+                    "image": "fishing2"
+                },
+                {
+                    "title": "tours.others.private.title",
+                    "content": "tours.others.private.content",
+                    "aside": "600",
+                    "image": "boat"
+                }
+            ]
+        },
+        "transformation2",
+        {
+            "title": "boat.title",
+            "content": [
+                {
+                    "title": "boat.story.title",
+                    "image": "transformation"
+                },
+                {
+                    "title": "boat.plus.title",
+                    "image": "cabin"
+                }
+            ]
+        },
+        "captain",
+        {
+            "title": "team.title",
+            "content": "team.content"
+        },
+        "fishing",
+        {
+            "title": "contacts.title",
+            "component": "contact"
+        },
+        "boat",
+        {
+            "title": "pictures.title",
+            "content": [
+                {
+                    "image": "transformation2"
+                },
+                {
+                    "image": "cave"
+                },
+                {
+                    "image": "cabin"
+                },
+                {
+                    "image": "drink"
+                },
+                {
+                    "image": "boat"
+                },
+                {
+                    "image": "child"
+                }
+            ]
+        },
+        {
+            "title": "partners.title",
+            "content": [
+                {
+                    "image": "hse"
+                }
+            ]
+        }
+    ]
+}

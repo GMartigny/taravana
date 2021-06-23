@@ -1,0 +1,22 @@
+@import "variables";
+
+.elevation (@lvl) {
+    @color: #000;
+    box-shadow: 0 @lvl*0.46px @lvl*0.625px -@lvl*0.29px fade(@color, 20%),
+    0 @lvl*1px @lvl*1.6px @lvl*0.125px fade(@color, 14%),
+    0 @lvl*0.4px @lvl*1.9px @lvl*0.33px fade(@color, 12%);
+}
+
+.reduce-motion (@rule) {
+    @media (prefers-reduced-motion) {
+        @rule();
+    }
+}
+
+.paper (@lvl) {
+    background-color: @white;
+    .elevation(@lvl);
+    border-radius: 4px;
+    max-width: 80ch;
+    margin: 0 auto 10px;
+}

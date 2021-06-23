@@ -7,11 +7,14 @@
     },
     "devDependencies": {
         "@parcel/transformer-less": "^2.0.0-beta.2",
+        "@parcel/transformer-vue": "^2.0.0-beta.2",
         "babel-plugin-transform-glob-import": "^1.0.1",
         "less": "^4.1.1",
         "parcel": "^2.0.0-beta.2",
         "parcel-namer-without-hash": "^0.0.1",
-        "parcel-plugin-imagemin": "^4.0.2"
+        "parcel-plugin-imagemin": "^4.0.2",
+        "vue": "^3.1.1",
+        "vue-i18n": "^9.1.6"
     },
     "targets": {
         "browser": {
@@ -22,5 +25,8 @@
         "plugins": [
             "babel-plugin-transform-glob-import"
         ]
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3"
     }
 }
