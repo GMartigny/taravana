@@ -3,7 +3,7 @@
     "browser": "dist/index.html",
     "scripts": {
         "play": "parcel src/index.html",
-        "build": "parcel build src/index.html"
+        "build": "parcel build src/index.html --no-source-maps --no-scope-hoist"
     },
     "devDependencies": {
         "@parcel/transformer-less": "^2.0.0-beta.2",
