@@ -23,6 +23,7 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        align-items: center;
 
         @media (max-width: 1023px) {
             flex-direction: column;

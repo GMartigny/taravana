@@ -4,7 +4,16 @@
     "sections": [
         {
             "title": "hook.title",
-            "content": "hook.content"
+            "content": [
+                {
+                    "image": "transformation2",
+                    "content": "hook.splash",
+                    "open": {
+                        "title": "hook.title",
+                        "content": "hook.content"
+                    }
+                }
+            ]
         },
         "child2",
         {
@@ -18,20 +27,34 @@
                     "image": "cave",
                     "open": {
                         "title": "tours.dolphin.day.popup.title",
-                        "content": "tours.dolphin.day.popup.content"
+                        "content": "tours.dolphin.day.popup.content",
+                        "list": "tours.dolphin.day.popup.list",
+                        "length": 3
                     }
                 },
                 {
                     "title": "tours.dolphin.half.title",
                     "content": "tours.dolphin.half.content",
                     "aside": "55",
-                    "image": "drink"
+                    "image": "drink",
+                    "open": {
+                        "title": "tours.dolphin.half.popup.title",
+                        "content": "tours.dolphin.half.popup.content",
+                        "list": "tours.dolphin.half.popup.list",
+                        "length": 3
+                    }
                 },
                 {
                     "title": "tours.dolphin.sunset.title",
                     "content": "tours.dolphin.sunset.content",
                     "aside": "65",
-                    "image": "fishing"
+                    "image": "fishing",
+                    "open": {
+                        "title": "tours.dolphin.sunset.popup.title",
+                        "content": "tours.dolphin.sunset.popup.content",
+                        "list": "tours.dolphin.sunset.popup.list",
+                        "length": 3
+                    }
                 }
             ]
         },
@@ -43,13 +66,23 @@
                     "title": "tours.others.fishing.title",
                     "content": "tours.others.fishing.content",
                     "aside": "120",
-                    "image": "fishing2"
+                    "image": "fishing2",
+                    "open": {
+                        "title": "tours.others.fishing.popup.title",
+                        "content": "tours.others.fishing.popup.content",
+                        "list": "tours.others.fishing.popup.list",
+                        "length": 2
+                    }
                 },
                 {
                     "title": "tours.others.private.title",
-                    "content": "tours.others.private.content",
-                    "aside": "600",
-                    "image": "boat"
+                    "image": "boat",
+                    "open": {
+                        "title": "tours.others.private.popup.title",
+                        "content": "tours.others.private.popup.content",
+                        "list": "tours.others.private.popup.list",
+                        "length": 4
+                    }
                 }
             ]
         },
@@ -59,11 +92,19 @@
             "content": [
                 {
                     "title": "boat.story.title",
-                    "image": "transformation"
+                    "image": "transformation",
+                    "open": {
+                        "title": "boat.story.title",
+                        "content": "boat.story.popup.content"
+                    }
                 },
                 {
                     "title": "boat.plus.title",
-                    "image": "cabin"
+                    "image": "cabin",
+                    "open": {
+                        "title": "boat.plus.title",
+                        "content": "boat.plus.popup.content"
+                    }
                 }
             ]
         },
@@ -106,6 +147,9 @@
             "content": [
                 {
                     "image": "hse"
+                },
+                {
+                    "image": "agoa"
                 }
             ]
         }

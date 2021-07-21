@@ -2,52 +2,100 @@
     "fr": {
         "hook": {
             "title": "L'émotion en caraïbes",
-            "content": "La Martinique est un carrefour de cultures.<br><em>Taravana Tautaï</em> est avant tout l'histoire d'une rencontre avec notre île.<br> Plusieurs programmes s’offrent à vous !<br> En journée complète ou demi-journée, vous pourrez partir à la découverte des dauphins, baleines et autres mammifères marins au sein du sanctuaire Agoa. Vous aurez peut-être la visite des tortues le temps d’une baignade à l’Anse noire, le tout, bien sûr, en dégustant l’un des meilleurs rhum de la Martinique accompagné de bons produits locaux. Selon vos envies, vous pourrez également choisir de finir cette sortie par un apéritif en profitant des derniers rayon du soleil."
+            "splash": "La Martinique, un carrefour de cultures.",
+            "content": "<p><em>Taravana Tautaï</em> est avant tout l'histoire d'une rencontre avec notre île.</p><p>L’excursion en bateau est l’activité incontournable à faire en Martinique. Ce sera l’occasion d’admirer la beauté du paysage, la faune, la flore et les recoins cachés de l’île.</p><p>Le capitaine present depuis plud de 20 ans dans la caraïbes vous partagera toutes ses connaissances des lieux et des espèces marines.</p><p>Plusieurs programmes s’offrent à vous au départ des anses d'Arlet.</p><p>En journée complète ou demi-journée, vous pourrez partir à la recherche des mammifères marins au sein du sanctuaire AGOA ou contourner le diamant et ainsi observer sa faune ornithologique.</p><p>Une escale baignade vous offrira sûrement le plaisir de nager en compagnie des tortues ainsi qu'une visite de la grotte aux chauves souris sont au programme.</p><p>Le tout, bien sûr, en dégustant l’un des meilleurs rhum de la Martinique accompagné de bons produits locaux.</p><p>Selon vos envies, vous pourrez également choisir de finir cette sortie par un apéritif dînatoire en profitant des derniers rayons du soleil.</p>"
         },
         "tours": {
             "dolphin": {
                 "title": "Sorties dauphins",
                 "day": {
                     "title": "Journée",
-                    "content": "Sortie observation des mamiphères marins avec repas et temps de détente compris.",
+                    "content": "Sortie observation des mammifères marins avec repas et baignades.",
                     "popup": {
                         "title": "Journée dauphins",
-                        "content": "<em>Taravana tautai</em> vous emmène observer les cétacés dans leur milieu naturel pour des rencontres à couper le souffle."
+                        "content": "<p>Le départ ce fait du ponton des anses d'arlet bourg en face de l’église, situé entre les trois îlets et le diamant.</p><p><em>Taravana tautai</em> vous emmène observer les cétacés dans leur milieu naturel pour des rencontres à couper le souffle, mais bien plus encore. Vous pourrez nager avec les tortues évoluant gracieusement sur les herbiers , épier les chauves-souris tapies au fond de leur grotte, admirer pélicans, frégates et fous, majestueux oiseaux marins.</p><p>Départ du bourg à 7h45 pour rejoindre la zone d'observation des cétacés. Nous resterons environ 20 mn avec les dauphins afin de respecter leur tranquillité et la charte  <q>Observateur Responsable des Cétacés</p><p>Après cette séquence émotion, nous vous offrons un moment de détente avec une pause baignade <q>autour d'un verre</q> et d'un repas à base de produits frais. Nous mouillons dans une anse protégée aux eaux cristallines.. N'oubliez pas vos maillots de bains, vos serviettes, masque, tuba, caméras et appareil photos.</p><p>Nous naviguerons ensuite, vers une anse protégée aux eaux cristallines afin de partager un apéritif et un repas concocté à partir de produits frais et locaux.</p><p>Retour vers les Anses d’Arlet pour la visite de la grotte aux chauves-souris suivi d'une baignade en compagnie des tortues. débarquement au point de départ autour de 17h00.</p>",
+                        "list": [
+                            "tarif adultes 90€",
+                            "enfants moins de 12 ans 50€",
+                            "gratuit pour les moins de 3 ans"
+                        ]
                     }
                 },
                 "half": {
                     "title": "Demi-journée",
-                    "content": "Embarquez pour une demi journée d’observation des mammifères marins au sein du sanctuaire Agoa avec un équipage qualifié et respectueux des animaux."
+                    "content": "Sortie observation des mammifères marins et baignades.",
+                    "popup": {
+                        "title": "Demi-journée dauphins",
+                        "content": "<p>Le départ ce fait du ponton des anses d'arlet bourg en face de l’église, situé entre les trois îlets et le diamant</p><p>départ a 07h30 ( suivant saison départ 13h)<br>Traversée de la baie de Fort-de-France en direction du Nord Ouest Caraibe avec en arrière plan la montagne pelée et toute son histoire au sein du Sanctuaire AGOA, recherche des cetaces, Nous resterons environ 20 minutes avec les dauphins afin de respecter leur tranquillité et la charte <q>Observateur Responsable des Cétacés</q>. Retour vers le sud en passant par la grotte aux chauves souris à l'entrée de l'anse noire</p><p>Sur le retour un apéritif local vous sera proposé, ainsi qu'une petite collation</p><p>retour aux environ de 12h ou de 17h selon la saison</p>",
+                        "list": [
+                            "tarif adultes 55€",
+                            "enfants moins de 12 ans 35€",
+                            "gratuit pour les moins de 3 ans"
+                        ]
+                    }
                 },
                 "sunset": {
                     "title": "Sunset",
-                    "content": "Profitez d’une après-midi en compagnie des mammifères marins présents dans le sanctuaire et finissez la journée en beauté en dégustant à bord un apéritif de qualité avec vue innoubliable sur le couché de soleil."
+                    "content": "Profitez d’un après-midi en compagnie des mammifères marins présents dans le sanctuaire et finissez la journée en beauté en dégustant à bord un apéritif de qualité avec vue inoubliable sur le coucher de soleil.",
+                    "popup": {
+                        "title": "Sortie Sunset",
+                        "content": "<p>rdv 12h45 pour un depart a 13h00 - Départ du bourg des Anses d’Arlet direction plein nord pour une session de recherche et d’observation des mammifères marins présents dans le sanctuaire AGOA, encadrés par une équipe de professionnels formés et respectueux de la charte d’observation responsable du sanctuaire marin.</p><p>16h00 - Arrivée a l’Anse noire après être passé par la célèbre grotte aux chauves-souris afin de profiter des nombreuses tortues présentes sur ce site. Baignade et collation sont bien sûr au programme !</p><p>17h30 - Départ de l’Anse noire pour nous positionner au large, moteur éteint, afin de partager un apéritif agrémenté de spécialités locales maison, tout en nous laissant dériver au gré des vagues pour profiter des derniers rayons du soleil et peut-être avoir la chance de voir le fameux rayon vert !</p><p>18h30 - Arrivée au ponton du bourg des Anses d’Arlet</p>",
+                        "list": [
+                            "tarif adultes 65€",
+                            "enfants moins de 11 ans 40€",
+                            "gratuit pour les moins de 3 ans"
+                        ]
+                    }
                 }
             },
             "others": {
                 "title": "Autres sorties",
                 "fishing": {
                     "title": "Pêche sportive",
-                    "content": "Accompagné d'un équipage professionnel, nous vous proposons des formules demi-journée avec ou sans materiel pour une capacité de 6 personnes maximum."
+                    "content": "Nous vous proposons de venir participer et/ou découvrir la pêche à bord de <em>Taravana tautai</em> qui a gardé dans ses gênes tout ce qu'il faut pour cette activité.",
+                    "popup": {
+                        "title": "Sortie pêche sportive",
+                        "content": "<p>Accompagné d'un équipage professionnel, nous vous proposons 2 formules à la demi-journée pour une capacité de 6 personnes maximum:</p><p>rdv 6h30 retour 14h</p>",
+                        "list": [
+                            "Sortie avec matériel fourni 130€/personne, (jigg, traîne, ...)",
+                            "Sortie sans matériel 110€/personne"
+                        ]
+                    }
                 },
                 "private": {
                     "title": "Privatisation",
-                    "content": "Nous vous proposons la privatisation complète du bateau à la journée ou demi-journée pour une capacité de 12 personnes maximum. Vous aurez la possibilité de faire votre programme à la carte, tant au niveau des destinations ou escales que des repas proposés. N'hésitez pas à nous contacter pour discuter de vos envies ou désirs."
+                    "content": "Nous vous proposons la privatisation complète du bateau à la journée ou demi-journée pour une capacité de 12 personnes maximum. Vous aurez la possibilité de faire votre programme à la carte, tant au niveau des destinations ou escales que des repas proposés. N'hésitez pas à nous contacter pour discuter de vos envies ou désirs.",
+                    "popup": {
+                        "title": "Privatisation",
+                        "content": "<p>Sorties en mer au départ des Anses d’Arlet en fonction de vos envies et des conditions climatiques, observation des cétacés au sanctuaire AGOA, rocher du diamant, observation des tortues marines, partie de pêche, etc</p><p>Nous vous proposons la privatisation complète du bateau à la journée ou demi-journée pour une capacité de 12 personnes maximum ( 6 max en pêche). Vous aurez la possibilité de faire votre programme à la carte, tant au niveau des destinations ou escales que des repas proposés. N'hésitez pas à nous contacter pour discuter de vos envies ou désirs.</p><p>Nous pouvons aussi faire venir un photographe (appareil photo et drone) afin d'immortaliser votre journée.</p>",
+                        "list": [
+                            "demi-journée: 500€",
+                            "journée 700€",
+                            "supplément pêche 100€",
+                            "supplément photographe 100€"
+                        ]
+                    }
                 }
             }
         },
         "boat": {
             "title": "Le bateau",
             "story": {
-                "title": "Histoire"
+                "title": "Histoire",
+                "popup": {
+                    "content": "<p>Conçu et construit à l’origine pour de la pêche au large, ce bateau vit le jour en 2014 au chantier naval martiniquais Multicap caraïbes.</p><p>Il devient alors un des modèles emblématiques de l’île de la Martinique. Après une première vie bien remplie passée au large de l’île coté atlantique afin de nous ramener les meilleurs produits de la mer, il fût petit à petit oublié au sud de l'île ...</p><p>C’est là que nous l’avons trouvé, nous montrant tout son potentiel afin de pouvoir commencer sa seconde vie !</p>"
+                }
             },
             "plus": {
-                "title": "Aménagements"
+                "title": "Aménagements",
+                "popup": {
+                    "content": "<p><em>Taravana Tautai</em> vient du polynesien et signifie pécheur fou, est un bateau de 10m d'une capacité de 12 passagers max, construit en Martinique en 2014 ayant subit un  <q>refit</q> intégral en 2020</p><p>Après 5 mois de chantier, il ressort métamorphosé ! Aménagé d’un plan de pont unique en Martinique, il est devenu extrêmement confortable tout en gardant la sécurité et la robustesse d'un bateau de pêche professionnel.</p><p>L’installation de sièges type <q>jockey</q>, vous donnera un maintien dans une position optimale, même en cas de mer agitée et vous pourrez tranquillement  <q>chiller</q> à l'arrière du bateau sur un grand bain de soleil.</p><p>Taravana tautaî est bien évidemment équipé de tout le nécessaire : couvert par un large taux pendant le temps d'observation et de détente a bord, sécurité conforme à la direction de la mer, échelle de bain, douchette de pont à l'eau douce, glacière, bac à glace pour la pêche sportive, grande plage arrière de mise a l'eau ainsi que pour l'apéritif avec son bar déployable au mouillage.</p><p>Ainsi paré, il est prêt à vous faire découvrir toutes les richesses de la côte caraïbe !</p>"
+                }
             }
         },
         "team": {
             "title": "L'équipage",
-            "content": "Tout a commencé pour Jérôme, le capitaine, par le milieu de la plongée en tant que Brevet d'etat de plongée en 1998 aux Glénans.<br>Après une arrivée en caraïbes en 2001, il as continué sa passion de la plongée. Puis il s'est orienté vers la marine marchande avec l'obtention de son diplôme de capitaine en 2007. Après plusieurs années de capitaine de bateau à voile dans tout l'arc antillais et plusieurs transatlantique, Jérôme a décidé de déposer définitivement ses valises en martinique. Et ainsi partager sa passion du milieu sous-marin et de la navigation avec vous.<br>Ainsi est née le concept de <em>Taravana Tautaï</em>, le partage de la culture caribéennes et du patrimoine marin."
+            "content": "<p>Tout a commencé pour Jérôme, le capitaine, par le milieu de la plongée en tant que Brevet d'état de plongée en 1998 aux Glénans.</p><p>Arrivé en Martinique en 2001, il a continué sa passion de la plongée, puis s'est orienté vers la marine marchande avec l'obtention de son diplôme de capitaine en 2007.</p><p>Après plusieurs années de capitaine de bateau à voile dans tout l'arc antillais, la Méditerranée et plusieurs transatlantiques, Jérôme a décidé de déposer définitivement ses valises en Martinique pour partager sa passion du milieu sous-marin et de la navigation avec vous.</p><p>Ainsi est né le concept de Taravana Tautaï, le partage de la culture caribéenne et du patrimoine</p>"
         },
         "contacts": {
             "title": "Contacts"
