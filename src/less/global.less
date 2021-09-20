@@ -105,3 +105,11 @@ iframe {
     .paper(2);
     max-width: 100ch;
 }
+
+.lazy {
+    opacity: 0;
+    transition: opacity linear .2s;
+}
+.lazy.loaded {
+    opacity: 1;
+}

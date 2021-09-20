@@ -1,6 +1,6 @@
 <template>
     <div class="splash" :style="css">
-        <img src="../static/boat.jpg" alt="Photo du bateau" itemprop="image">
+        <img src="../static/boat.webp" alt="Photo du bateau" itemprop="image">
     </div>
 </template>
 

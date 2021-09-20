@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 import $bus from "./bus.js";
+import "./lazy.js";
 
 import Main from "./main.vue";
 import messages from "./lang/i18n.json";

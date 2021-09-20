@@ -1,13 +1,13 @@
 <template>
     <div class="tile" :class="{hasPopup: data.open}" @click="openPopup" v-bind="prop">
         <header>
-            <h3 v-if="data.title" :itemprop="offer ? 'name' : undefined">{{ $t(data.title) }}</h3>
-            <img :src="images[data.image]" alt="">
+            <h3 v-if="data.title" :itemprop="offer && 'name'">{{ $t(data.title) }}</h3>
+            <img :data-src="images[data.image]" alt="" class="lazy">
         </header>
         <div class="body" v-if="data.content">
-            <div v-html="$t(data.content)" :itemprop="offer ? 'description' : undefined" />
+            <div v-html="$t(data.content)" :itemprop="offer && 'description'" />
             <aside>
-                <span :itemprop="offer ? 'price' : undefined">{{ data.aside }}</span>
+                <span :itemprop="offer && 'price'">{{ data.aside }}</span>
                 <span v-if="offer" itemprop="priceCurrency">€</span>
             </aside>
         </div>
@@ -17,7 +17,7 @@
 
 <script>
     import Popup from "./popup.vue";
-    import images from "../static/*.jpg";
+    import images from "../static/*.webp";
 
     export default {
         name: "Tile",
@@ -100,16 +100,13 @@
                 width: 100%;
                 transform: translateY(-50%);
                 z-index: -1;
-                transition: transform .2s ease;
+                transition: transform .2s ease, opacity .2s linear;
             }
 
             h3 {
                 color: @white;
                 font-size: 40px;
-
-                & ~ img {
-                    opacity: 0.7;
-                }
+                background-color: rgba(0, 0, 0, .5);
             }
         }
 

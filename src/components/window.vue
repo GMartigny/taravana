@@ -1,9 +1,11 @@
 <template>
-    <div :style="{ backgroundImage: `url(${images[data]})`, backgroundPositionY }" />
+    <div>
+        <img :data-src="images[data]" :style="{ transform }" alt="" class="lazy">
+    </div>
 </template>
 
 <script>
-    import images from "../static/*.jpg";
+    import images from "../static/*.webp";
 
     export default {
         name: "Window",
@@ -14,7 +16,8 @@
                 viewHeight: 0,
                 height: 0,
                 top: 0,
-                backgroundPositionY: 0,
+                transform: "",
+                classes: "lazy",
             };
         },
         mounted () {
@@ -27,9 +30,9 @@
         },
         methods: {
             scroll () {
-                const position = ((this.viewHeight + window.scrollY) - this.top) / (this.viewHeight + this.height);
+                const position = (((this.viewHeight + window.scrollY) - this.top) / (this.viewHeight + this.height));
                 if (0 < position && position < 1) {
-                    this.backgroundPositionY = `${position * 100}%`;
+                    this.transform = `translate3d(0, calc(${position * this.height}px - ${position * 100}%), 0)`;
                 }
             },
         },
@@ -41,12 +44,15 @@
 
     div {
         height: 50vh;
-        background-size: cover;
-        background-position-x: center;
-        background-position: 50%;
+        overflow: hidden;
 
-        .reduce-motion({
-            background-position-y: 50% !important
-        });
+        img {
+            position: relative;
+            width: 100%;
+
+            .reduce-motion({
+                transform: translate(0, -50%) !important;
+            });
+        }
     }
 </style>
