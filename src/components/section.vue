@@ -53,7 +53,7 @@
 
             .anchor {
                 position: absolute;
-                top: -65px;
+                top: -84px;
             }
         }
 
