@@ -4,7 +4,7 @@
             <span class="anchor" :id="data.slug"></span>
             {{ $t(data.title) }}
         </h2>
-        <p v-if="typeof data.content === 'string'" v-html="$t(data.content)"></p>
+        <p v-if="typeof data.content === 'string'" v-html="$t(data.content)" />
         <Grid v-else-if="Array.isArray(data.content)" :tiles="data.content" :offer="data.offer" />
         <component v-if="data.component" :is="data.component" />
     </section>
