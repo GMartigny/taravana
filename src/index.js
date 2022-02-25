@@ -5,11 +5,9 @@ import $bus from "./bus.js";
 import "./lazy.js";
 
 import Main from "./main.vue";
-import messages from "./lang/i18n.json";
+import * as messages from "./lang";
 
 import "./less/global.less";
-
-import "./robots.txt";
 
 const app = createApp(Main);
 
