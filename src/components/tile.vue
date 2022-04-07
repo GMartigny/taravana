@@ -2,7 +2,7 @@
     <div class="tile" :class="{hasPopup: data.open}" @click="openPopup" v-bind="prop">
         <header>
             <h3 v-if="data.title" :itemprop="offer && 'name'">{{ $t(data.title) }}</h3>
-            <img :data-src="images[data.image]" alt="" class="lazy">
+            <img :src="images[data.image]" alt="" loading="lazy">
         </header>
         <div class="body" v-if="data.content">
             <div v-html="$t(data.content)" :itemprop="offer && 'description'" />

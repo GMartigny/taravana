@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :data-src="images[data]" :style="{ transform }" alt="" class="lazy">
+        <img :src="images[data]" :style="{ transform }" alt="" loading="lazy">
     </div>
 </template>
 
@@ -17,7 +17,6 @@
                 height: 0,
                 top: 0,
                 transform: "",
-                classes: "lazy",
             };
         },
         mounted () {
