@@ -8,7 +8,7 @@
             "title": "hook.title",
             "content": [
                 {
-                    "image": "transformation2",
+                    "image": "view",
                     "content": "hook.splash",
                     "open": {
                         "title": "hook.title",
@@ -18,6 +18,39 @@
             ]
         },
         "child2",
+        {
+            "title": "pictures.title",
+            "content": [
+                {
+                    "image": "dauphin"
+                },
+                {
+                    "image": "dauphin2"
+                },
+                {
+                    "image": "etoile"
+                },
+                {
+                    "image": "tortue"
+                },
+                {
+                    "image": "tortue2"
+                },
+                {
+                    "image": "tortue3"
+                },
+                {
+                    "image": "tortue4"
+                },
+                {
+                    "image": "lune"
+                },
+                {
+                    "image": "eponge"
+                }
+            ]
+        },
+	"anse",
         {
             "title": "tours.dolphin.title",
             "offer": true,
@@ -120,35 +153,11 @@
             "title": "contacts.title",
             "component": "contact"
         },
-        "boat",
-        {
-            "title": "pictures.title",
-            "content": [
-                {
-                    "image": "transformation2"
-                },
-                {
-                    "image": "cave"
-                },
-                {
-                    "image": "cabin"
-                },
-                {
-                    "image": "drink"
-                },
-                {
-                    "image": "boat"
-                },
-                {
-                    "image": "child"
-                }
-            ]
-        },
         {
             "title": "partners.title",
             "content": [
                 {
-                    "image": "hse"
+                    "image": "depaz"
                 },
                 {
                     "image": "agoa"
